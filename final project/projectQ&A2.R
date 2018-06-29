@@ -15,7 +15,7 @@ BankNamesDiff = setdiff(BankNames,BankSoloNames)
 # Found the other data set with previously augmented economic data
 # Only data based on Portugal what role does the WORLD ECONOMY play on
 # the individual decisions of customers? 
-# We can augment metrics to gauge world economy shit to the data set
+# We can augment metrics to gauge world economy stuff to the data set
 # given the month and year, but we don't have that so I'll have to make it
 
 cat("The data set contains ",BankSoloNamesLength," without the augmented data\n")
@@ -125,7 +125,7 @@ print("for the 2009 marketing campaign:")
 print(table(BankTrain$y[train09]))
 
 # Does the year of the marketing campaign have any impact on the percentage of ppl buying the term deposits?
-# I only gots 2 years, I can't really say
+# I only have 2 years, I can't really say
 
 # Turn warnings back on
 options(warn=0)
