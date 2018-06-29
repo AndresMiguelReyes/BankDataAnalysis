@@ -35,9 +35,6 @@ library(MASS)
 library(pROC)
 library(caret)
 
-## FIRST GLM TO FIND WHAT'S IMPORTANT
-# oops i deleted it
-
 Bank.glm = glm(y~.-cons.conf.idx-previous-campaign-loan-housing-education-age-duration
                -pdays-nr.employed ,family=binomial,data=BankTwoThirdsTrain)
 probs = predict(Bank.glm, BankOneThirdTest, type = "response")
