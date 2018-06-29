@@ -4,7 +4,7 @@ rm(list=ls())
 BankTwoThirdsTrain = read.csv("BankTwoThirdsTrain.csv")
 BankOneThirdTest = read.csv("BankOneThirdTest.csv")
 
-# this stupid X thing keeps showing up in my data, not in documentation
+# this X thing keeps showing up in my data, not in documentation
 # probably catches a ride somewhere in pca
 if("X" %in% colnames(BankTwoThirdsTrain))
 {
@@ -37,9 +37,6 @@ plot(downsample.roc, legacy.axes = TRUE, print.thres="best", print.thres.best.me
 
 downsampImp = varImp(tr.downsample,main="Downsampled top 10 variables")
 plot(downsampImp,top=10)
-
-
-shell.exec("https://www.youtube.com/watch?v=qRFhNZNu_xw")
 
 # Confusion Matrix and Statistics
 # 
